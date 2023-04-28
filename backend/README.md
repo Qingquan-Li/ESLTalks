@@ -18,14 +18,13 @@
 
 4. Apply migrations to database
    ```bash
-   (.venv) $ python manage.py migrate --settings=a_project_config.settings.local
+   (.venv) $ python manage.py migrate
    ```
 
 5. Create a `.env` (stores environment variables) file in the root of the backend folder.
    The `.env` file content:
    ```
    SECRET_KEY=Your Django Secret Key
-   LOCAL_POSTGRESQL_PASSWORD=Your PostgreSQL Password
    ```
 
 6. Run the backend project
