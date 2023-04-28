@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'xxx' # Hide the original auto-generated SECRET_KEY
+SECRET_KEY = 'xxx'  # Hide the original auto-generated SECRET_KEY
 # https://docs.djangoproject.com/en/4.2/ref/settings/#secret-key
 SECRET_KEY = os.getenv('SECRET_KEY')
 
@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Local
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +133,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# #################### Newly expanded content ####################
+
+
+# docs.djangoproject.com/en/4.2/topics/auth/customizing/#substituting-a-custom-user-model
+AUTH_USER_MODEL = 'accounts.CustomUser'
