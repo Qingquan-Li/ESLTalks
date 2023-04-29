@@ -9,7 +9,7 @@ class MeetingAdmin(admin.ModelAdmin):
     def save_model(self, request, obj, form, change):
         """
         References:
-        docs.djangoproject.com/en/4.2/ref/contrib/admin/#django.contrib.admin.ModelAdmin.save_model
+        docs.djangoproject.com/en/4.1/ref/contrib/admin/#django.contrib.admin.ModelAdmin.save_model
         books.agiliq.com/projects/django-admin-cookbook/en/latest/current_user.html
         """
         obj.publisher = request.user
@@ -96,7 +96,7 @@ class RegistrationAdmin(admin.ModelAdmin):
     search_fields = ("first_name", "last_name", "email")
 
     list_filter = (
-        # "meeting",  # list all meetings for a volunteer
+        # "meeting",  # list all meetings for a tutor
         # You can limit the choices of a related model to the objects
         # involved in that relation using RelatedOnlyFieldListFilter.
         ("meeting", admin.RelatedOnlyFieldListFilter),
