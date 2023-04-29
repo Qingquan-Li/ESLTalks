@@ -59,11 +59,13 @@ const MeetingList = ({}) => {
                                 <div className="flex items-center gap-4">
                                     <img
                                         alt="#"
-                                        src={meeting.publisher.avatar_url}
+                                        // src={meeting.publisher.avatar_url}
+                                        src='https://avatars.githubusercontent.com/u/19491358?v=4'
                                         className="h-16 w-16 rounded-full object-cover"
                                     />
                                     <div>
-                                        <p className="mt-1 text-4xl font-medium text-black">Tutor: {meeting.publisher.name}</p>
+                                        {/* <p className="mt-1 text-4xl font-medium text-black">Volunteer: {meeting.publisher.name}</p> */}
+                                        <p className="mt-1 text-4xl font-medium text-black">Volunteer: Name</p>
                                     </div>
                                 </div>
                                 <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-700 text-2xl">
