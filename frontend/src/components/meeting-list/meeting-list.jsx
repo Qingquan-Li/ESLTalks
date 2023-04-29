@@ -51,7 +51,8 @@ const MeetingList = ({}) => {
                     <h2 className="meeting-list-title text-center text-4xl text-white font-bold tracking-tight sm:text-5xl" id="meeting">
                         Get your tutoring appointment
                     </h2>
-                    <div className="meeting-list-card mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+
+                    <div className="meeting-list-card mt-5 grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
 
                         {meetings.map((meeting) => (
                             <blockquote className="rounded-lg bg-gray-200 p-8">
@@ -74,10 +75,14 @@ const MeetingList = ({}) => {
                                 <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
                                     Date: {meeting.meeting_time}
                                 </p>
+                                <Link to={`/meetings/${meeting.id}`}>
                                 <a className="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring mt-3" href="/#">
-                                    <span className="absolute inset-x-0 bottom-0 h-[2px] bg-indigo-600 transition-all group-hover:h-full group-active:bg-indigo-500"></span>
-                                    <span className="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white"><Link to={`/meetings/${meetingId}`}>details</Link></span>
+                                        <span className="absolute inset-x-0 bottom-0 h-[2px] bg-indigo-600 transition-all group-hover:h-full group-active:bg-indigo-500"></span>
+                                        <span className="relative text-sm font-medium text-indigo-600 transition-colors group-hover:text-white">
+                                           details
+                                        </span>
                                 </ a>
+                                </Link>
                             </blockquote>
                         ))}
 
