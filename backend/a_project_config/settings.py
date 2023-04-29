@@ -32,8 +32,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'esltalks.pythonanywhere.com']
@@ -51,7 +51,7 @@ INSTALLED_APPS = [
 
     # Local
     'accounts.apps.AccountsConfig',
-    'meeting_info.apps.MeetingInfoConfig',
+    'tutoring_info.apps.TutoringInfoConfig',
 ]
 
 MIDDLEWARE = [
