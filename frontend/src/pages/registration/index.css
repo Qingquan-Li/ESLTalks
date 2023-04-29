@@ -1,0 +1,21 @@
+.meeting-detail-container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.meeting-detail-container .avatar  {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+.meeting-detail-container .summary {
+  font-size: large;
+}
+
+.invalid{
+  color: red;
+  font-style: italic;
+  font-size: 0.7rem;
+}
