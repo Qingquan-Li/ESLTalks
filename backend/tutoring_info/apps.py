@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class MeetingInfoConfig(AppConfig):
+class TutoringInfoConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'meeting_info'
+    name = 'tutoring_info'
