@@ -1,0 +1,14 @@
+{
+  "home": {
+    "en-US": "Home",
+    "zh-cn": "首页"
+  },
+  "about": {
+    "en": "About Us",
+    "zh": "关于我们"
+  },
+  "contact": {
+    "en": "Contact Us",
+    "zh": "联系我们"
+  }
+}
