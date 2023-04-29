@@ -50,7 +50,7 @@ const Navbar = () => {
                                 <div className="sm:flex sm:gap-4">
                                     <a
                                         className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-teal-500"
-                                        href="/admin/"
+                                        href="https://esltalks.pythonanywhere.com/admin/"
                                     >
                                         Tutor Login
                                     </a>
