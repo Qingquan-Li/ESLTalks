@@ -5,6 +5,8 @@ import RegistrationForm from "./RegistrationForm";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./index.css";
 import { RootAPIURL } from "../../common/Url.js";
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const baseURL = RootAPIURL;
 

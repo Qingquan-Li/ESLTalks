@@ -3,13 +3,10 @@ import {Route, Routes} from "react-router-dom";
 import HOME from "./pages/home/home";
 import CONTACT from "./pages/contact/contact";
 import CONVERSATION from "./pages/conversation/conversation";
-import RegistrationForm from "./pages/registration/RegistrationForm";
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from 'react-router-dom';
 import MeetingDetail from "./pages/registration";
 
+// import 'bootstrap/dist/js/bootstrap.bundle';
+// import 'bootstrap/dist/css/bootstrap.css';
 function App() {
 
 

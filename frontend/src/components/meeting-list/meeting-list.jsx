@@ -63,16 +63,16 @@ const MeetingList = ({}) => {
                                         className="h-16 w-16 rounded-full object-cover"
                                     />
                                     <div>
-                                        <p className="mt-1 text-lg font-medium text-black">Tutor: {meeting.publisher.name}</p>
+                                        <p className="mt-1 text-4xl font-medium text-black">Tutor: {meeting.publisher.name}</p>
                                     </div>
                                 </div>
-                                <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-700">
+                                <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-700 text-2xl">
                                     {meeting.summary}
                                 </p>
-                                <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+                                <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500 text-xl">
                                     Meet: {meeting.way_of_meeting}
                                 </p>
-                                <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+                                <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500 text-xl">
                                     Date: {meeting.meeting_time}
                                 </p>
                                 <Link to={`/meetings/${meeting.id}`}>
