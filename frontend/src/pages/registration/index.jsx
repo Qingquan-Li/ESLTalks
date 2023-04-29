@@ -48,11 +48,13 @@ export default function MeetingDetail() {
             <img
               loading='lazy'
               className='avatar'
-              src={meeting.publisher?.avatar_url}
-              alt={meeting.publisher?.name}
+              // src={meeting.publisher?.avatar_url}
+              src='https://avatars.githubusercontent.com/u/19491358?v=4'
+              // alt={meeting.publisher?.name}
+              alt='name'
             />
             <p className='d-inline px-2'>
-              Tutor: {meeting.publisher?.name}
+              Volunteer: {meeting.publisher?.name}
             </p>
           </div>
           <p className='summary pt-2'>
