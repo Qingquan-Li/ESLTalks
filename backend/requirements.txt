@@ -1,4 +1,7 @@
 asgiref==3.6.0
 backports.zoneinfo==0.2.1
 Django==4.2
+python-dotenv==1.0.0
 sqlparse==0.4.4
+tomli==2.0.1
+yapf==0.33.0
