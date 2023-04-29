@@ -32,7 +32,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'esltalks.pythonanywhere.com']
@@ -142,3 +143,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # docs.djangoproject.com/en/4.2/topics/auth/customizing/#substituting-a-custom-user-model
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+# https://docs.djangoproject.com/en/4.2/howto/static-files/
+# During development, if you use django.contrib.staticfiles,
+# this will be done automatically by runserver when DEBUG is set to True
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
